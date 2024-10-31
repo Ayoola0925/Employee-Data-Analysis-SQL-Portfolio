@@ -109,6 +109,8 @@ Description: This query analyzes regional trends in employee performance by coun
 
 Results: Our analysis shows that [Top State] consistently has higher performance metrics, suggesting either a greater customer base or more active engagement from employees in this region.
 
+Overall, this query is structured to extract meaningful insights into employee performance across different regions. By using various joins, it combines data from multiple related tables to provide a comprehensive view of order management and sales performance by employee within each region. The use of aggregate functions and grouping allows for the analysis of total orders handled and sales generated, facilitating effective decision-making based on employee contributions to revenue generation.
+
 - Average Employee Tenure
 
 Query:
@@ -121,7 +123,20 @@ SELECT AVG(TIMESTAMPDIFF(YEAR, hire_date, CURDATE())) AS avg_tenure_years FROM e
 Description: This query calculates the average tenure of employees, an important metric for workforce stability and experience levels within the company. 
 Understanding tenure helps assess the balance between experienced and newer employees, which can influence company culture and innovation.
 
-Results: The average tenure is approximately X years, indicating a mix of both experienced and relatively new employees, which can be valuable for diversity in ideas and approaches.
+This SQL query calculates the average number of years that employees have been with the company. It does this by:
+For each employee, calculating the difference in years between their hire_date and the current date (CURDATE()).
+Taking the average of all these differences to provide a single value representing the average tenure across all employees in the employees table.
+
+Results: The average tenure is approximately 19years, indicating a mix of both experienced and relatively new employees, which can be valuable for diversity in ideas and approaches.
+
+Breakdown of 19.8026
+Whole Number (19):
+The 19 indicates that, on average, employees have been with the company for 19 full years.
+
+Decimal (0.8026):
+The 0.8026 represents the fraction of a year that corresponds to additional months and days. To interpret this:
+0.8026 years can be converted into months and days.
+0.8026 years × 12 months/year = 9.6312 months (approximately 9 months and 19 days when considering the decimal part further).
 
  
  ## Challenges Encountered
