@@ -107,8 +107,6 @@ LIMIT 0, 1000;
 
 Description: This query analyzes regional trends in employee performance by counting total orders and sales per employee in each region. By using a LEFT JOIN on the states table, the query ensures that all regions are included, even those with no orders. This analysis helps identify which regions have the highest activity and may indicate a need for targeted resource allocation or marketing efforts.
 
-Results: Our analysis shows that [Top State] consistently has higher performance metrics, suggesting either a greater customer base or more active engagement from employees in this region.
-
 Overall, this query is structured to extract meaningful insights into employee performance across different regions. By using various joins, it combines data from multiple related tables to provide a comprehensive view of order management and sales performance by employee within each region. The use of aggregate functions and grouping allows for the analysis of total orders handled and sales generated, facilitating effective decision-making based on employee contributions to revenue generation.
 
 - Average Employee Tenure
